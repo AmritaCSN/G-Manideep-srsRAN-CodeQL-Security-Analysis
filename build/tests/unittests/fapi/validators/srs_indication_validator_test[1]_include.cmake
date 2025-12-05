@@ -1,0 +1,5 @@
+if(EXISTS "/home/kali/Desktop/srsRAN_Project/build/tests/unittests/fapi/validators/srs_indication_validator_test[1]_tests.cmake")
+  include("/home/kali/Desktop/srsRAN_Project/build/tests/unittests/fapi/validators/srs_indication_validator_test[1]_tests.cmake")
+else()
+  add_test(srs_indication_validator_test_NOT_BUILT srs_indication_validator_test_NOT_BUILT)
+endif()

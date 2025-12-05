@@ -1,0 +1,5 @@
+if(EXISTS "/home/kali/Desktop/srsRAN_Project/build/tests/unittests/pdcp/pdcp_rx_test[1]_tests.cmake")
+  include("/home/kali/Desktop/srsRAN_Project/build/tests/unittests/pdcp/pdcp_rx_test[1]_tests.cmake")
+else()
+  add_test(pdcp_rx_test_NOT_BUILT pdcp_rx_test_NOT_BUILT)
+endif()

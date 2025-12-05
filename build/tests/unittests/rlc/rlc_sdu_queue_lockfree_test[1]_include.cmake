@@ -1,0 +1,5 @@
+if(EXISTS "/home/kali/Desktop/srsRAN_Project/build/tests/unittests/rlc/rlc_sdu_queue_lockfree_test[1]_tests.cmake")
+  include("/home/kali/Desktop/srsRAN_Project/build/tests/unittests/rlc/rlc_sdu_queue_lockfree_test[1]_tests.cmake")
+else()
+  add_test(rlc_sdu_queue_lockfree_test_NOT_BUILT rlc_sdu_queue_lockfree_test_NOT_BUILT)
+endif()

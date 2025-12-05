@@ -1,0 +1,5 @@
+if(EXISTS "/home/kali/Desktop/srsRAN_Project/build/tests/unittests/pcap/pcap_ngap_test[1]_tests.cmake")
+  include("/home/kali/Desktop/srsRAN_Project/build/tests/unittests/pcap/pcap_ngap_test[1]_tests.cmake")
+else()
+  add_test(pcap_ngap_test_NOT_BUILT pcap_ngap_test_NOT_BUILT)
+endif()
