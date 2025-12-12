@@ -18,8 +18,76 @@ Community announcements and support - [Discussion board](https://www.github.com/
 
 Features and roadmap - [Features](https://docs.srsran.com/projects/project/en/latest/general/source/2_features_and_roadmap.html).
 
-Build Preparation
+## Overview
 -----------------
+
+Modern 5G Radio Access Networks increasingly rely on open-source, software-defined RAN implementations such as **srsRAN**. Due to the size, complexity, and performance-critical nature of RAN software written in **C/C++**, latent security vulnerabilities can remain undetected and pose serious risks to **network stability**, **availability**, and **user privacy**.
+
+This project performs a **read-only static security analysis** of the **srsRAN codebase** using **CodeQL**, focusing on systematically uncovering source-level security weaknesses **without changing runtime behavior**.
+
+This analysis framework is capable of:
+
+- ✅ **Detecting memory safety vulnerabilities** that may cause crashes or denial-of-service  
+- ✅ **Identifying unsafe and insecure API usage** in system-level code  
+- ✅ **Flagging hardcoded credentials/secrets** and **weak randomness**  
+- ✅ **Discovering cryptographic misuse** and **timing-attack risks**  
+- ✅ **Highlighting improper input validation** and **insecure network communication**  
+- ✅ **Exposing over-privileged access patterns** and **missing authorization checks**  
+
+The system uses:
+-----------------
+
+- **Custom CodeQL queries** written for **C/C++** RAN software  
+- **Semantic data-flow and control-flow analysis** provided by CodeQL  
+- **Query-driven detection** of security anti-patterns and **CWE classes**  
+- **Reproducible execution pipeline** with **SARIF** result outputs  
+
+---
+
+## Where the CodeQL queries are
+-----------------
+
+📁 **Queries Folder**
+- `codeql-custom-queries-cpp/`
+
+🔗 **Direct Link**
+- https://github.com/Deepu02042001/srsRAN_Project/tree/main/codeql-custom-queries-cpp
+
+---
+
+## Project Structure
+-----------------
+
+| File / Directory | Description |
+|------------------|------------|
+| `codeql-custom-queries-cpp/` | Custom CodeQL queries written for C/C++ security analysis |
+| `scripts/` | Scripts to create CodeQL database and run custom queries |
+| `results/` | SARIF outputs, logs, and summaries |
+| `results/images/` | Result screenshots/images (manual upload) |
+| `build/` | Build artifacts generated during compilation |
+| `README.md` | Project documentation |
+
+---
+
+## Technologies Used
+-----------------
+
+| Category | Tools |
+|--------|------|
+| Static Analysis | **CodeQL (C/C++)** |
+| Programming | **C, C++** |
+| Build System | **CMake** |
+| OS | **Linux** |
+| Analysis Type | **SAST (Static Application Security Testing)** |
+| Output | **SARIF, Logs** |
+
+---
+
+
+## Methodology
+-----------------
+
+Build Preparation
 
 ### Dependencies
 
