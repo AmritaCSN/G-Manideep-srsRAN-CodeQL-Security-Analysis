@@ -1,4 +1,4 @@
-srsRAN Project
+Uncovering Security Weaknesses in srsRAN with CodeQL: A Static Analysis Approach for Next-Gen RAN Systems
 ==============
 
 [![Build Status](https://github.com/srsran/srsRAN_Project/actions/workflows/ccpp.yml/badge.svg?branch=main)](https://github.com/srsran/srsRAN_Project/actions/workflows/ccpp.yml)
